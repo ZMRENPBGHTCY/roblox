@@ -1,0 +1,19 @@
+while true do
+while true do
+local args = {
+	"Left Arm",
+	1,
+	{
+		SoundPart = "Left Arm",
+		DebounceTime = 0.1,
+		HitBoxTime = 0.1,
+		Hitter = "Left Arm",
+		HitBoxStart = 0.1,
+		AnimSpeed = 1.137,
+		ComboEndTime = 0.1,
+		Damage = 1000
+	}
+}
+game:GetService("Players").LocalPlayer.Character:WaitForChild("Fists"):WaitForChild("EventsFolder"):WaitForChild("Swing"):FireServer(unpack(args))
+wait(0.1)
+end
